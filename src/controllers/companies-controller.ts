@@ -1,5 +1,4 @@
 import { Request, Response } from 'express'
-import { InstanceError } from 'sequelize/types'
 import { Company } from '../models/company'
 
 export const companiesController = {
