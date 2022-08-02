@@ -58,7 +58,7 @@ export const candidatesController = {
             const { name, bio, email, phone, openToWork} = req.body
             const candidate = await Candidate.findByPk(id)
 
-           if (candidate === null){
+           if (candidate === null) {
             return res.status(404).json({ message: 'Candidate not found'})
            }
 
